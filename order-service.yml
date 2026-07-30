@@ -1,0 +1,16 @@
+server:
+  port: 8086
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/order_db
+    username: postgres
+    password: admin123
+
+    hikari:
+      minimum-idle: 2
+      maximum-pool-size: 10
+
+app:
+  service-name: Order Service
+  message: Identity configuration loaded from GitHub
