@@ -14,3 +14,7 @@ spring:
 app:
   service-name: Identity Service
   message: Identity configuration loaded from GitHub
+
+eureka:
+  instance:
+    instance-id: ${spring.application.name}:${random.value}
